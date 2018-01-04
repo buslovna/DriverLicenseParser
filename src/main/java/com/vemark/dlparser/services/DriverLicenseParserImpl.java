@@ -1,6 +1,7 @@
 package com.vemark.dlparser.services;
 
 import java.util.Arrays;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Vector;
 import java.util.regex.Matcher;
@@ -16,16 +17,17 @@ public class DriverLicenseParserImpl implements DriverLicenseParser {
 
 	@Override
 	public PersonData parse(String barcode) {
-				
-		List<String> basicInfo = findBasicInfo(barcode);
 		PersonData person = new PersonData();
-		person.setLastName(basicInfo.get(0));
-		person.setFirstName(basicInfo.get(1));
-		person.setAddress(basicInfo.get(2));
-		person.setCity(basicInfo.get(3));
-		person.setDriversLicense(basicInfo.get(4));
-		person.setVersion(basicInfo.get(5));
-		person.setZip(basicInfo.get(6));
+		if (barcode != "" && barcode != null && barcode.trim().startsWith("@")) {
+			List<String> basicInfo = findBasicInfo(barcode);
+			person.setLastName(basicInfo.get(0));
+			person.setFirstName(basicInfo.get(1));
+			person.setAddress(basicInfo.get(2));
+			person.setCity(basicInfo.get(3));
+			person.setDriversLicense(basicInfo.get(4));
+			person.setVersion(basicInfo.get(5));
+			person.setZip(basicInfo.get(6));
+		}
 		
 		return person;
 	}
@@ -37,11 +39,22 @@ public class DriverLicenseParserImpl implements DriverLicenseParser {
 		list.add(findAddress(barcode));       //Address pos: 2
 		list.add(findCity(barcode));      	  //City pos: 3
 		list.add(findLicenseNumber(barcode)); //License pos: 4
-		list.add(versionParser(barcode));	  //Version pos: 5
+		list.add(findVersion(barcode));	  //Version pos: 5
 		list.add(findZipcode(barcode)); 	  //Zipcode pos: 6
+		
+		
 		return list;
 	}
-	
+	Hashtable<String, String> parseByVersion(String barcode){
+		Hashtable<String, String> map = new Hashtable<String, String>();
+		String version = findVersion(barcode);
+		switch(version) {
+		case "01":
+			//parseVersionOne(String barcode);
+		}
+		
+		return map;
+	}
 	String findFullName(String barcode) {
 		return (barcode.toUpperCase().substring(barcode.indexOf("DAA") + 3, barcode.indexOf("DAG")).trim());
 	}
@@ -65,7 +78,7 @@ public class DriverLicenseParserImpl implements DriverLicenseParser {
 	String findZipcode(String barcode) {
 		return (barcode.toUpperCase().substring(barcode.indexOf("DAK") + 3, barcode.indexOf("DAQ")).trim());
 	}
-	String versionParser(String barcode) {
+	String findVersion(String barcode) {
 		
 		String regexBlock = "\\d{6}(\\d{2})\\w+(.*)";
 		Pattern pattern = Pattern.compile(regexBlock);
