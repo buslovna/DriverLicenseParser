@@ -12,7 +12,7 @@ public class PersonData {
     private String zip;
     private String version;
 
-    public PersonData() 
+	public PersonData() 
     {
 		
 	}
@@ -80,7 +80,13 @@ public class PersonData {
 	public void setZip(String zip) {
 		this.zip = zip;
 	}
-	
+    public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
 	@Override
 	public String toString() {
 		

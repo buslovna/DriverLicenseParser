@@ -24,6 +24,7 @@ public class DriverLicenseParserImpl implements DriverLicenseParser {
 		person.setAddress(basicInfo.get(2));
 		person.setCity(basicInfo.get(3));
 		person.setDriversLicense(basicInfo.get(4));
+		person.setVersion(basicInfo.get(5));
 		
 		return person;
 	}
@@ -35,7 +36,7 @@ public class DriverLicenseParserImpl implements DriverLicenseParser {
 		list.add(findAddress(barcode));       //Address pos: 2
 		list.add(findCity(barcode));      	  //City pos: 3
 		list.add(findLicenseNumber(barcode)); //License pos: 4
-		//list.add(versionParser(barcode));	  //Version pos: 5
+		list.add(versionParser(barcode));	  //Version pos: 5
 		
 		return list;
 	}
@@ -62,11 +63,13 @@ public class DriverLicenseParserImpl implements DriverLicenseParser {
 	}
 	String versionParser(String barcode) {
 		
-		String regexBlock = "\\d{6}[(\\d{2})]\\w+";
+		String regexBlock = "\\d{6}(\\d{2})\\w+(.*)";
 		Pattern pattern = Pattern.compile(regexBlock);
 		Matcher matcher= pattern.matcher(barcode);
-		
-		String version = matcher.group();
-		return version;
+		StringBuilder str = new StringBuilder();
+		if(matcher.find()){
+			str.append(matcher.group(1));
+		}
+		return str.toString();
 	}
 }
