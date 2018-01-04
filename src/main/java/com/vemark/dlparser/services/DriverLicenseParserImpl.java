@@ -25,6 +25,7 @@ public class DriverLicenseParserImpl implements DriverLicenseParser {
 		person.setCity(basicInfo.get(3));
 		person.setDriversLicense(basicInfo.get(4));
 		person.setVersion(basicInfo.get(5));
+		person.setZip(basicInfo.get(6));
 		
 		return person;
 	}
@@ -37,7 +38,7 @@ public class DriverLicenseParserImpl implements DriverLicenseParser {
 		list.add(findCity(barcode));      	  //City pos: 3
 		list.add(findLicenseNumber(barcode)); //License pos: 4
 		list.add(versionParser(barcode));	  //Version pos: 5
-		
+		list.add(findZipcode(barcode)); 	  //Zipcode pos: 6
 		return list;
 	}
 	
@@ -60,6 +61,9 @@ public class DriverLicenseParserImpl implements DriverLicenseParser {
 	String findLastName(String barcode) {
 		List<String> strList = Arrays.asList(findFullName(barcode).split(","));
 		return strList.get(1);
+	}
+	String findZipcode(String barcode) {
+		return (barcode.toUpperCase().substring(barcode.indexOf("DAK") + 3, barcode.indexOf("DAQ")).trim());
 	}
 	String versionParser(String barcode) {
 		
