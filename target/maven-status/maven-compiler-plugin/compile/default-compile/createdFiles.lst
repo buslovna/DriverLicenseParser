@@ -1,7 +1,0 @@
-com\vemark\dlparser\services\DriverLicenseParser.class
-com\vemark\dlparser\domain\dto\BarcodeDTO.class
-com\vemark\dlparser\controllers\DriverLicenseParserController.class
-com\vemark\dlparser\Application.class
-com\vemark\dlparser\services\DriverLicenseParserImpl.class
-com\vemark\dlparser\domain\dto\PersonDataDTO.class
-com\vemark\dlparser\domain\PersonData.class
