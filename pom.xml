@@ -5,7 +5,7 @@
 
     <groupId>com.vemark</groupId>
     <artifactId>driver-license_parser</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.1</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -14,6 +14,16 @@
     </parent>
 
     <dependencies>
+    	<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter</artifactId>
+    		<exclusions>
+        		<exclusion>
+            		<groupId>org.springframework.boot</groupId>
+            		<artifactId>spring-boot-starter-logging</artifactId>
+        		</exclusion>
+    		</exclusions>
+		</dependency>   
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -27,11 +37,19 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-log4j</artifactId>
+    		<version>1.2.8.RELEASE</version>
+		</dependency>
+        
         <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path</artifactId>
-            <scope>test</scope>
-        </dependency>
+            <groupId>com.sumologic.plugins.log4j</groupId>
+            <artifactId>sumo-log4j-appender</artifactId>
+            <version>2.6</version>
+        </dependency>  
+             
     </dependencies>
 
     <properties>
