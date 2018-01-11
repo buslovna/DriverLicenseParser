@@ -1,7 +1,5 @@
 package com.vemark.dlparser.controllers;
 
-import java.util.concurrent.atomic.AtomicLong;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +16,6 @@ import com.vemark.dlparser.services.DriverLicenseParser;
 public class DriverLicenseParserController 
 {
 	private static final Logger logger = LoggerFactory.getLogger(DriverLicenseParserController.class);
-    private final AtomicLong counter = new AtomicLong();
     
     @Autowired
     private DriverLicenseParser driverLicenseParser; 
@@ -27,8 +24,9 @@ public class DriverLicenseParserController
     public PersonData postParsePersonData(@RequestBody BarcodeDTO barcode) 
     {
     	logger.info("Controller for /PersonData [POST] is fired...");
-    	PersonData person = driverLicenseParser.parse(barcode.getBarcodeString());
+    	PersonData person = null;
+    	if (barcode != null)
+    		 person = driverLicenseParser.parse(barcode.getBarcodeString());
         return person;
     }
-
 }

@@ -1,0 +1,198 @@
+2018-01-11 13:35:19 INFO  Application:48 - Starting Application on WS174235 with PID 7540 (C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser\target\classes started by AXB0VH2 in C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser)
+2018-01-11 13:35:19 DEBUG Application:51 - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-11 13:35:19 INFO  Application:593 - No active profile set, falling back to default profiles: default
+2018-01-11 13:35:19 INFO  AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68d8970d: startup date [Thu Jan 11 13:35:19 EST 2018]; root of context hierarchy
+2018-01-11 13:35:19 INFO  Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 13:35:20 INFO  TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8081 (http)
+2018-01-11 13:35:20 INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 668 ms
+2018-01-11 13:35:20 INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-11 13:35:20 INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-11 13:35:20 INFO  FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-11 13:35:20 INFO  FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-11 13:35:20 INFO  FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-11 13:35:20 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68d8970d: startup date [Thu Jan 11 13:35:19 EST 2018]; root of context hierarchy
+2018-01-11 13:35:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/parse],methods=[POST]}" onto public com.vemark.dlparser.domain.PersonData com.vemark.dlparser.controllers.DriverLicenseParserController.postParsePersonData(com.vemark.dlparser.domain.dto.BarcodeDTO)
+2018-01-11 13:35:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[POST]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.postPing()
+2018-01-11 13:35:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[GET]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.getPing()
+2018-01-11 13:35:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 13:35:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:35:20 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:35:20 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:35:20 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:35:20 INFO  OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-11 13:35:20 INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-11 13:35:20 INFO  TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8081 (http)
+2018-01-11 13:35:20 INFO  Application:57 - Started Application in 1.175 seconds (JVM running for 1.729)
+2018-01-11 13:35:21 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-11 13:35:21 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2018-01-11 13:35:21 INFO  DriverLicenseParserController:26 - Controller for /PersonData [POST] is fired...
+2018-01-11 13:35:21 DEBUG DriverLicenseParserImpl:24 - Parsing the barcoded string: ***********************************************************************************************************************************************************
+2018-01-11 13:35:21 DEBUG DriverLicenseParserImpl:41 - Person Data extracted: [ver.01] Driver License: B241621980980, NIKITA BUSLOV, Address: 10772 BITTERNUT HICKORY LN, BOYNTON BEACH, FL 33437-7551
+2018-01-11 13:38:10 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125 - Application shutdown requested.
+2018-01-11 13:38:10 INFO  AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68d8970d: startup date [Thu Jan 11 13:35:19 EST 2018]; root of context hierarchy
+2018-01-11 13:38:10 INFO  AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-11 13:38:22 INFO  Application:48 - Starting Application on WS174235 with PID 8972 (C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser\target\classes started by AXB0VH2 in C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser)
+2018-01-11 13:38:22 DEBUG Application:51 - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-11 13:38:22 INFO  Application:593 - No active profile set, falling back to default profiles: default
+2018-01-11 13:38:22 INFO  AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68d8970d: startup date [Thu Jan 11 13:38:22 EST 2018]; root of context hierarchy
+2018-01-11 13:38:22 INFO  Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 13:38:22 INFO  TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8081 (http)
+2018-01-11 13:38:22 INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 626 ms
+2018-01-11 13:38:22 INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-11 13:38:22 INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-11 13:38:22 INFO  FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-11 13:38:22 INFO  FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-11 13:38:22 INFO  FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-11 13:38:23 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68d8970d: startup date [Thu Jan 11 13:38:22 EST 2018]; root of context hierarchy
+2018-01-11 13:38:23 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/parse],methods=[POST]}" onto public com.vemark.dlparser.domain.PersonData com.vemark.dlparser.controllers.DriverLicenseParserController.postParsePersonData(com.vemark.dlparser.domain.dto.BarcodeDTO)
+2018-01-11 13:38:23 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[GET]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.getPing()
+2018-01-11 13:38:23 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[POST]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.postPing()
+2018-01-11 13:38:23 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 13:38:23 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:38:23 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:38:23 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:38:23 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:38:23 INFO  OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-11 13:38:23 INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-11 13:38:23 INFO  TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8081 (http)
+2018-01-11 13:38:23 INFO  Application:57 - Started Application in 1.141 seconds (JVM running for 1.998)
+2018-01-11 13:38:29 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-11 13:38:29 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+2018-01-11 13:38:29 INFO  DriverLicenseParserController:26 - Controller for /PersonData [POST] is fired...
+2018-01-11 13:38:29 DEBUG DriverLicenseParserImpl:24 - Parsing the barcoded string: ***** ******************************************************************* ********* ******* ************ *********************** ********************   ***
+2018-01-11 13:38:29 DEBUG DriverLicenseParserImpl:41 - Person Data extracted: [ver.01] Driver License: B241621980980, NIKITA BUSLOV, Address: 10772 BITTERNUT HICKORY LN, BOYNTON BEACH, FL 33437-7551
+2018-01-11 13:41:22 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125 - Application shutdown requested.
+2018-01-11 13:41:22 INFO  AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68d8970d: startup date [Thu Jan 11 13:38:22 EST 2018]; root of context hierarchy
+2018-01-11 13:41:22 INFO  AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-11 13:42:37 INFO  Application:48 - Starting Application on WS174235 with PID 7476 (C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser\target\classes started by AXB0VH2 in C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser)
+2018-01-11 13:42:37 DEBUG Application:51 - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-11 13:42:37 INFO  Application:593 - No active profile set, falling back to default profiles: default
+2018-01-11 13:42:37 INFO  AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@462fcb88: startup date [Thu Jan 11 13:42:37 EST 2018]; root of context hierarchy
+2018-01-11 13:42:37 INFO  Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 13:42:38 INFO  TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8081 (http)
+2018-01-11 13:42:38 INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 620 ms
+2018-01-11 13:42:38 INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-11 13:42:38 INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-11 13:42:38 INFO  FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-11 13:42:38 INFO  FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-11 13:42:38 INFO  FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-11 13:42:38 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@462fcb88: startup date [Thu Jan 11 13:42:37 EST 2018]; root of context hierarchy
+2018-01-11 13:42:38 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/parse],methods=[POST]}" onto public com.vemark.dlparser.domain.PersonData com.vemark.dlparser.controllers.DriverLicenseParserController.postParsePersonData(com.vemark.dlparser.domain.dto.BarcodeDTO)
+2018-01-11 13:42:38 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[GET]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.getPing()
+2018-01-11 13:42:38 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[POST]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.postPing()
+2018-01-11 13:42:38 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 13:42:38 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:42:38 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:42:38 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:42:38 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:42:38 INFO  OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-11 13:42:38 INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-11 13:42:38 INFO  TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8081 (http)
+2018-01-11 13:42:38 INFO  Application:57 - Started Application in 1.193 seconds (JVM running for 1.721)
+2018-01-11 13:42:39 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-11 13:42:39 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2018-01-11 13:42:39 INFO  DriverLicenseParserController:26 - Controller for /PersonData [POST] is fired...
+2018-01-11 13:42:39 DEBUG DriverLicenseParserImpl:24 - Parsing the barcoded string: ***** ******************************************************************* ********* ******* ************ *********************** ********************   ***
+2018-01-11 13:42:39 DEBUG DriverLicenseParserImpl:41 - Person Data extracted: [ver.01] Driver License: ************, ***** *****, Address: **** ********* ******* **, BOYNTON BEACH, FL 33437-7551
+2018-01-11 13:43:37 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125 - Application shutdown requested.
+2018-01-11 13:43:37 INFO  AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@462fcb88: startup date [Thu Jan 11 13:42:37 EST 2018]; root of context hierarchy
+2018-01-11 13:43:37 INFO  AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-11 13:43:44 INFO  Application:48 - Starting Application on WS174235 with PID 8936 (C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser\target\classes started by AXB0VH2 in C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser)
+2018-01-11 13:43:44 DEBUG Application:51 - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-11 13:43:44 INFO  Application:593 - No active profile set, falling back to default profiles: default
+2018-01-11 13:43:44 INFO  AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e8e219d: startup date [Thu Jan 11 13:43:44 EST 2018]; root of context hierarchy
+2018-01-11 13:43:44 INFO  Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 13:43:44 INFO  TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8081 (http)
+2018-01-11 13:43:44 INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 610 ms
+2018-01-11 13:43:45 INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-11 13:43:45 INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-11 13:43:45 INFO  FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-11 13:43:45 INFO  FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-11 13:43:45 INFO  FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-11 13:43:45 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e8e219d: startup date [Thu Jan 11 13:43:44 EST 2018]; root of context hierarchy
+2018-01-11 13:43:45 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/parse],methods=[POST]}" onto public com.vemark.dlparser.domain.PersonData com.vemark.dlparser.controllers.DriverLicenseParserController.postParsePersonData(com.vemark.dlparser.domain.dto.BarcodeDTO)
+2018-01-11 13:43:45 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[GET]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.getPing()
+2018-01-11 13:43:45 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[POST]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.postPing()
+2018-01-11 13:43:45 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 13:43:45 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:43:45 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:43:45 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:43:45 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:43:45 INFO  OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-11 13:43:45 INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-11 13:43:45 INFO  TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8081 (http)
+2018-01-11 13:43:45 INFO  Application:57 - Started Application in 1.137 seconds (JVM running for 1.626)
+2018-01-11 13:43:47 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-11 13:43:47 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2018-01-11 13:43:47 INFO  DriverLicenseParserController:26 - Controller for /PersonData [POST] is fired...
+2018-01-11 13:43:47 DEBUG DriverLicenseParserImpl:24 - Parsing the barcoded string: ***** ******************************************************************* ********* ******* ************ *********************** ********************   ***
+2018-01-11 13:43:47 DEBUG DriverLicenseParserImpl:41 - Person Data extracted: [ver.01] Driver License: B************, N***** B*****, Address: 1**** ********* ******* **, BOYNTON BEACH, FL 33437-7551
+2018-01-11 13:44:42 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125 - Application shutdown requested.
+2018-01-11 13:44:42 INFO  AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e8e219d: startup date [Thu Jan 11 13:43:44 EST 2018]; root of context hierarchy
+2018-01-11 13:44:42 INFO  AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-11 13:44:58 INFO  Application:48 - Starting Application on WS174235 with PID 8636 (C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser\target\classes started by AXB0VH2 in C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser)
+2018-01-11 13:44:58 DEBUG Application:51 - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-11 13:44:58 INFO  Application:593 - No active profile set, falling back to default profiles: default
+2018-01-11 13:44:59 INFO  AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e8e219d: startup date [Thu Jan 11 13:44:59 EST 2018]; root of context hierarchy
+2018-01-11 13:44:59 INFO  Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 13:44:59 INFO  TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8081 (http)
+2018-01-11 13:44:59 INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 643 ms
+2018-01-11 13:44:59 INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-11 13:44:59 INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-11 13:44:59 INFO  FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-11 13:44:59 INFO  FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-11 13:44:59 INFO  FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-11 13:44:59 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e8e219d: startup date [Thu Jan 11 13:44:59 EST 2018]; root of context hierarchy
+2018-01-11 13:44:59 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/parse],methods=[POST]}" onto public com.vemark.dlparser.domain.PersonData com.vemark.dlparser.controllers.DriverLicenseParserController.postParsePersonData(com.vemark.dlparser.domain.dto.BarcodeDTO)
+2018-01-11 13:44:59 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[POST]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.postPing()
+2018-01-11 13:44:59 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[GET]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.getPing()
+2018-01-11 13:44:59 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 13:44:59 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:44:59 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:44:59 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:44:59 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:45:00 INFO  OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-11 13:45:00 INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-11 13:45:00 INFO  TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8081 (http)
+2018-01-11 13:45:00 INFO  Application:57 - Started Application in 1.171 seconds (JVM running for 1.666)
+2018-01-11 13:45:01 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-11 13:45:01 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2018-01-11 13:45:01 INFO  DriverLicenseParserController:26 - Controller for /PersonData [POST] is fired...
+2018-01-11 13:45:01 DEBUG DriverLicenseParserImpl:24 - Parsing the barcoded string: ***** ******************************************************************* ********* ******* ************ *********************** ********************   ***
+2018-01-11 13:45:01 DEBUG DriverLicenseParserImpl:41 - Person Data extracted: [ver.01] Driver License: B************, N***** B*****, Address: 1**** ********* ******* **, B****** *****, F* 3*********
+2018-01-11 13:46:19 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125 - Application shutdown requested.
+2018-01-11 13:46:19 INFO  AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e8e219d: startup date [Thu Jan 11 13:44:59 EST 2018]; root of context hierarchy
+2018-01-11 13:46:19 INFO  AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-01-11 13:46:24 INFO  Application:48 - Starting Application on WS174235 with PID 9068 (C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser\target\classes started by AXB0VH2 in C:\Users\AXB0VH2\sts_workspace\DriverLicenseParser)
+2018-01-11 13:46:24 DEBUG Application:51 - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-11 13:46:24 INFO  Application:593 - No active profile set, falling back to default profiles: default
+2018-01-11 13:46:24 INFO  AnnotationConfigEmbeddedWebApplicationContext:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@462fcb88: startup date [Thu Jan 11 13:46:24 EST 2018]; root of context hierarchy
+2018-01-11 13:46:24 INFO  Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2018-01-11 13:46:24 INFO  TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8081 (http)
+2018-01-11 13:46:24 INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 625 ms
+2018-01-11 13:46:25 INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-11 13:46:25 INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-11 13:46:25 INFO  FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-11 13:46:25 INFO  FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-11 13:46:25 INFO  FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-11 13:46:25 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@462fcb88: startup date [Thu Jan 11 13:46:24 EST 2018]; root of context hierarchy
+2018-01-11 13:46:25 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/parse],methods=[POST]}" onto public com.vemark.dlparser.domain.PersonData com.vemark.dlparser.controllers.DriverLicenseParserController.postParsePersonData(com.vemark.dlparser.domain.dto.BarcodeDTO)
+2018-01-11 13:46:25 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[POST]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.postPing()
+2018-01-11 13:46:25 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/ping],methods=[GET]}" onto public java.lang.String com.vemark.dlparser.controllers.DriverLicenseParserPing.getPing()
+2018-01-11 13:46:25 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-11 13:46:25 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-11 13:46:25 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:46:25 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:46:25 INFO  SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-11 13:46:25 INFO  OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-01-11 13:46:25 INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-01-11 13:46:25 INFO  TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 8081 (http)
+2018-01-11 13:46:25 INFO  Application:57 - Started Application in 1.14 seconds (JVM running for 1.646)
+2018-01-11 13:46:28 INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-11 13:46:28 INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2018-01-11 13:46:28 INFO  DriverLicenseParserController:26 - Controller for /PersonData [POST] is fired...
+2018-01-11 13:46:28 DEBUG DriverLicenseParserImpl:24 - Parsing the barcoded string: ***** ******************************************************************* ********* ******* ************ *********************** ********************   ***
+2018-01-11 13:46:28 DEBUG DriverLicenseParserImpl:41 - Person Data extracted: [ver.01] FL Driver License: B************, N***** B*****, Address: 1**** ********* ******* **, B****** *****, F* 3*********
+2018-01-11 13:46:45 INFO  SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125 - Application shutdown requested.
+2018-01-11 13:46:45 INFO  AnnotationConfigEmbeddedWebApplicationContext:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@462fcb88: startup date [Thu Jan 11 13:46:24 EST 2018]; root of context hierarchy
+2018-01-11 13:46:45 INFO  AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
