@@ -1,5 +1,7 @@
 package com.vemark.dlparser.domain;
 
+import java.util.UUID;
+
 public class PersonData 
 {
     private long id;
@@ -16,7 +18,7 @@ public class PersonData
 
     public PersonData() 
     {
-		
+		this.id = UUID.randomUUID().hashCode();
 	}
 
     
