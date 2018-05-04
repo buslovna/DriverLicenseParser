@@ -42,29 +42,28 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<dependency>
-    		<groupId>org.springframework.cloud</groupId>
-    		<artifactId>spring-cloud-aws-actuator</artifactId>
-    		<version>1.2.2.RELEASE</version>
-		</dependency>
-		<dependency>
-		    <groupId>org.springframework.cloud</groupId>
-		    <artifactId>spring-cloud-starter-aws</artifactId>
-		    <version>1.2.2.RELEASE</version>
-		</dependency>
         
 		<dependency>
     		<groupId>org.springframework.boot</groupId>
     		<artifactId>spring-boot-starter-log4j</artifactId>
     		<version>1.2.8.RELEASE</version>
 		</dependency>
-        
+		
+        <!--        
         <dependency>
-            <groupId>com.sumologic.plugins.log4j</groupId>
-            <artifactId>sumo-log4j-appender</artifactId>
-            <version>2.6</version>
-        </dependency>  
-             
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+ 		 </dependency>
+  		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+  		</dependency>
+  		<dependency>
+			<groupId>org.thymeleaf.extras</groupId>
+			<artifactId>thymeleaf-extras-springsecurity4</artifactId>	
+  		</dependency>
+  		-->
+  		
     </dependencies>
 
     <properties>
@@ -85,6 +84,13 @@
             <id>spring-releases</id>
             <url>https://repo.spring.io/libs-release</url>
         </repository>
+
+  		<repository>
+    		<id>spring-milestone</id>
+   		 <name>Spring Milestone Repository</name>
+    		<url>https://repo.spring.io/milestone</url>
+  		</repository>
+  		
     </repositories>
     <pluginRepositories>
         <pluginRepository>
